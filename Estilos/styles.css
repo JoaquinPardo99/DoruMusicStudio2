@@ -38,6 +38,14 @@ main {
     color: #fff !important; 
 }
 
+.carousel {
+    width: 100%; /* Carrusel ocupa todo el ancho */
+}
+
+.carousel-inner {
+    height: 100vh; /* Carrusel ocupa toda la altura de la pantalla */
+}
+
 .servicio {
     margin-bottom: 20px;
     background-color: #f8f9fa;
@@ -175,6 +183,12 @@ footer .redes i{
   color: white;
   font-size: 20px;
   letter-spacing: 10px;
+}
+
+@media (max-width: 1024px) {
+    .carousel-inner {
+        height: auto; /* En resoluciones más pequeñas, la altura se ajusta automáticamente */
+    }
 }
 
 @media (max-width: 767px) {
