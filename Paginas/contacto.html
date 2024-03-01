@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../Estilos/styles.css">
+    <title>Doru Music Studio</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-custom">
+            <div class="container">
+              <a class="navbar-brand" href="../index.html">
+                <img src="../Imagenes/4.png" alt="Logo" width="150" height="150" class="d-inline-block align-text-top me-2">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Paginas/servicios.html">Servicios</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Paginas/nosotros.html">Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Paginas/proyectos.html">Proyectos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../Paginas/contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+</header>
+
+<main class="contactomain">
+    <form action="">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre" required>
+
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" id="apellido" required>
+
+        <label for="correo">Correo Electrónico</label>
+        <input type="email" name="correo" id="correo" required>
+
+        <label for="telefono">Teléfono</label>
+        <input type="tel" name="telefono" id="telefono" required>
+
+        <label for="servicio">Servicio</label>
+        <select name="servicio" id="servicio">
+            <option value="mezcla">Mezcla</option>
+            <option value="mastering">Mastering</option>
+            <option value="mastering">Post-Producción</option>
+            <option value="mastering">Diseño Sonoro</option>
+            <option value="mastering">Edición</option>
+            <option value="mastering">Música Para Imagen</option>
+            <option value="otro">Otro</option>
+        </select>
+
+        <label for="descripcion">Descripción</label>
+        <textarea name="descripcion" id="descripcion" cols="10" rows="10" required></textarea>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+</main>
+
+<footer>
+    <p> &copy; 2024 Doru Music Studio. Todos los derechos reservados.</p>
+    <div class="redes">
+        <a href="mailto:dorumusicstudio@gmail.com">
+            <i class="fa-regular fa-envelope"></i>
+        </a>
+        <a href="https://www.instagram.com/dorumusicstudio/">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://wa.me/+51997473296">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+  </footer>
+            
+      
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+    
+</body>
+</html>
