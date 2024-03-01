@@ -39,11 +39,11 @@ main {
 }
 
 .carousel {
-    width: 100%; /* Carrusel ocupa todo el ancho */
+    width: 100%;
 }
 
 .carousel-inner {
-    height: 100vh; /* Carrusel ocupa toda la altura de la pantalla */
+    height: 100vh;
 }
 
 .servicio {
@@ -187,7 +187,7 @@ footer .redes i{
 
 @media (max-width: 1024px) {
     .carousel-inner {
-        height: auto; /* En resoluciones más pequeñas, la altura se ajusta automáticamente */
+        height: auto;
     }
 }
 
