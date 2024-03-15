@@ -1,0 +1,28 @@
+footer {
+	position: sticky;
+	height: auto;
+	width: 100%;
+	background-color: $background-color_1;
+	text-align: center;
+	color: $color_1;
+	padding: 20px;
+	p {
+		font-size: 15px;
+		margin-bottom: 20px;
+	}
+	a {
+		text-decoration: none;
+		i {
+			&:hover {
+				color: $color_3;
+			}
+		}
+	}
+	.redes {
+		i {
+			color: $color_1;
+			font-size: 20px;
+			letter-spacing: 10px;
+		}
+	}
+}
