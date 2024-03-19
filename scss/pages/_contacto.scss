@@ -1,40 +1,59 @@
 .contactomain {
-	padding: 10px;
-	color: $color_1;
-	text-align: center;
-	height: auto;
-}
-form {
-	display: inline-block;
-	text-align: center;
-	width: 50%;
-}
-label {
-	margin: 10px;
-	padding: 10px;
-}
-input {
-	margin-bottom: 20px;
-	padding: 8px;
-	width: 100%;
-}
-select {
-	margin-bottom: 20px;
-	padding: 8px;
-	width: 100%;
-}
-textarea {
-	margin-bottom: 20px;
-	padding: 8px;
-	width: 100%;
-}
-button {
-	background-color: $background-color_3;
-	color: $color_1;
-	padding: 10px;
-	border: none;
-	border-radius: 10px;
-	&:hover {
-		background-color: $background-color_4;
-	}
+    padding: 10px;
+    color: $color_1;
+    text-align: center;
+    height: auto;
+
+    .formulario-container {
+        background-color: black;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 20px auto;
+        max-width: 800px;
+        form {
+            display: inline-block;
+            text-align: left;
+            width: 100%;
+
+            label {
+                margin: 10px;
+                padding: 10px;
+            }
+
+            input,
+            select,
+            textarea {
+                margin-bottom: 20px;
+                padding: 8px;
+                width: calc(100% - 20px);
+                border: none;
+                background-color: transparent;
+                border-bottom: 1px solid white;
+                color: white;
+                outline: none;
+
+                &:focus {
+                    border-bottom: 1px solid $color_1;
+                }
+            }
+
+            textarea {
+                height: 150px;
+            }
+
+            button {
+                background-color: $background-color_3;
+                color: $color_1;
+                padding: 10px;
+                border: none;
+                border-radius: 10px;
+                margin: 0 auto;
+                display: block;
+
+                &:hover {
+                    background-color: $background-color_4;
+                }
+            }
+        }
+    }
 }

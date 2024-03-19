@@ -204,44 +204,52 @@ footer .redes i {
   text-align: center;
   height: auto;
 }
-
-form {
-  display: inline-block;
-  text-align: center;
-  width: 50%;
+.contactomain .formulario-container {
+  background-color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 800px;
 }
-
-label {
+.contactomain .formulario-container form {
+  display: inline-block;
+  text-align: left;
+  width: 100%;
+}
+.contactomain .formulario-container form label {
   margin: 10px;
   padding: 10px;
 }
-
-input {
+.contactomain .formulario-container form input,
+.contactomain .formulario-container form select,
+.contactomain .formulario-container form textarea {
   margin-bottom: 20px;
   padding: 8px;
-  width: 100%;
+  width: calc(100% - 20px);
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  color: white;
+  outline: none;
 }
-
-select {
-  margin-bottom: 20px;
-  padding: 8px;
-  width: 100%;
+.contactomain .formulario-container form input:focus,
+.contactomain .formulario-container form select:focus,
+.contactomain .formulario-container form textarea:focus {
+  border-bottom: 1px solid #fff;
 }
-
-textarea {
-  margin-bottom: 20px;
-  padding: 8px;
-  width: 100%;
+.contactomain .formulario-container form textarea {
+  height: 150px;
 }
-
-button {
+.contactomain .formulario-container form button {
   background-color: #492f81;
   color: #fff;
   padding: 10px;
   border: none;
   border-radius: 10px;
+  margin: 0 auto;
+  display: block;
 }
-button:hover {
+.contactomain .formulario-container form button:hover {
   background-color: #311f5f;
 }
 
