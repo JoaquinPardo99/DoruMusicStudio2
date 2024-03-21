@@ -10,12 +10,12 @@
 
 .descripcion-index {
     display: flex;
-    flex-direction: column; /* Ajusta la dirección del flexbox a columna */
-    justify-content: space-around; /* Ajusta el espacio alrededor de los elementos */
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     background-color: $background-color_1;
     color: $color_1;
-    height: 400px; /* Puedes ajustar según sea necesario */
+    height: 400px;
     width: 100%;
     text-align: center;
     padding: 30px;
@@ -23,12 +23,12 @@
     h1 {
         font-size: 50px;
         display: flex;
-        align-items: center; /* Alinea verticalmente el texto y la imagen */
+        align-items: center;
 
         img {
-            margin-right: 10px; /* Ajusta el espacio entre la imagen y el texto */
-            height: 150px; /* Ajusta la altura máxima de la imagen */
-            width: auto; /* Ajusta el ancho máximo de la imagen */
+            margin-right: 10px;
+            height: 150px;
+            width: auto;
         }
 
         @media (max-width: 767px) {
@@ -39,7 +39,7 @@
 
     p {
         font-size: 20px;
-        margin-top: 10px; /* Ajusta el margen superior del párrafo */
+        margin-top: 10px;
 
         @media (max-width: 767px) {
             font-size: 18px;
@@ -47,7 +47,7 @@
     }
 
     @media (max-width: 767px) {
-        height: auto; /* Ajusta la altura automática en pantallas pequeñas */
+        height: auto;
         padding: 20px;
         text-align: center;
     }
