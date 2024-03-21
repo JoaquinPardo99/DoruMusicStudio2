@@ -1,29 +1,50 @@
 .servicio {
-	margin-bottom: 20px;
-	background-color: $background-color_2;
+    margin-bottom: 20px;
+    background-color: $background-color_2;
 }
+
 .servicios-container {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-	gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
+
 .card {
-	border: 10px solid black;
-	border-radius: 10px;
-	background-color: $background-color_1;
-	color: $color_1;
-	h5{
-		font-size: 30px;
-	}
+    border: 10px solid black;
+    border-radius: 10px;
+    background-color: $background-color_1;
+    color: $color_1;
+
+    h5 {
+        font-size: 30px;
+    }
 }
+
 .card-body {
-	padding: 20px;
+    padding: 20px;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin-bottom: 20px; // Ajusta el margen inferior de la imagen
+    }
+
+    p.card-text {
+        margin-bottom: 20px; // Ajusta el margen inferior del texto
+    }
+
+    .btn-custom {
+        margin-top: 20px; // Ajusta el margen superior del botón
+    }
 }
+
 .btn-custom {
-	background-color: $background-color_3;
-	border-color: $border-color_1;
-	&:hover {
-		background-color: $background-color_4;
-		border-color: $border-color_2;
-	}
+    background-color: $background-color_3;
+    border-color: $border-color_1;
+
+    &:hover {
+        background-color: $background-color_4;
+        border-color: $border-color_2;
+    }
 }

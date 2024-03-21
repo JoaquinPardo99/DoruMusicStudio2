@@ -3,12 +3,34 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
 
-    img {
-        width: 100%;
-        height: auto;
-        border: 10px solid #000;
-        margin-bottom: 20px;
-        transition: transform 0.3s;
+    .project {
+        position: relative;
+        text-align: center;
+
+        img {
+            width: 100%;
+            height: auto;
+            border: 10px solid #000;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        p {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 5px 10px;
+            font-size: 15px;
+            opacity: 0; /* Oculta el texto por defecto */
+            transition: opacity 0.3s;
+        }
+
+        &:hover p {
+            opacity: 1; /* Muestra el texto al pasar el mouse sobre el contenedor */
+        }
     }
 
     img:hover {

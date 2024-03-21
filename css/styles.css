@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(../img/1.png);
+  background-image: url(../img/DoruBackground.png);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -71,27 +72,45 @@ footer .redes i {
   height: 100%;
 }
 
-.slogan {
+.descripcion-index {
   display: flex;
-  justify-content: center;
+  flex-direction: column; /* Ajusta la dirección del flexbox a columna */
+  justify-content: space-around; /* Ajusta el espacio alrededor de los elementos */
   align-items: center;
   background-color: #000;
   color: #fff;
-  height: 200px;
-  width: auto;
+  height: 400px; /* Puedes ajustar según sea necesario */
+  width: 100%;
+  text-align: center;
+  padding: 30px;
 }
-.slogan p {
-  margin: 0;
-  font-size: 30px;
+.descripcion-index h1 {
+  font-size: 50px;
+  display: flex;
+  align-items: center; /* Alinea verticalmente el texto y la imagen */
+}
+.descripcion-index h1 img {
+  margin-right: 10px; /* Ajusta el espacio entre la imagen y el texto */
+  height: 150px; /* Ajusta la altura máxima de la imagen */
+  width: auto; /* Ajusta el ancho máximo de la imagen */
 }
 @media (max-width: 767px) {
-  .slogan p {
+  .descripcion-index h1 {
     font-size: 25px;
   }
 }
+.descripcion-index p {
+  font-size: 20px;
+  margin-top: 10px; /* Ajusta el margen superior del párrafo */
+}
 @media (max-width: 767px) {
-  .slogan {
-    height: 180px;
+  .descripcion-index p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .descripcion-index {
+    height: auto; /* Ajusta la altura automática en pantallas pequeñas */
     padding: 20px;
     text-align: center;
   }
@@ -120,6 +139,18 @@ footer .redes i {
 
 .card-body {
   padding: 20px;
+}
+.card-body img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+}
+.card-body p.card-text {
+  margin-bottom: 20px;
+}
+.card-body .btn-custom {
+  margin-top: 20px;
 }
 
 .btn-custom {
@@ -187,12 +218,31 @@ footer .redes i {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 20px;
 }
-.gallery img {
+.gallery .project {
+  position: relative;
+  text-align: center;
+}
+.gallery .project img {
   width: 100%;
   height: auto;
   border: 10px solid #000;
   margin-bottom: 20px;
   transition: transform 0.3s;
+}
+.gallery .project p {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 15px;
+  opacity: 0; /* Oculta el texto por defecto */
+  transition: opacity 0.3s;
+}
+.gallery .project:hover p {
+  opacity: 1; /* Muestra el texto al pasar el mouse sobre el contenedor */
 }
 .gallery img:hover {
   transform: scale(1.1);
