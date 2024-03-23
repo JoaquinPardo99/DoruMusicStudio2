@@ -5,7 +5,7 @@
     height: auto;
 
     .formulario-container {
-        background-color: black;
+        background-color: $color_2;
         padding: 20px;
         border-radius: 10px;
         margin: 20px auto;
@@ -27,14 +27,18 @@
                 padding: 8px;
                 width: calc(100% - 20px);
                 border: none;
-                background-color: transparent;
+                background-color: $color_2;
                 border-bottom: 1px solid white;
-                color: white;
+                color: $color_1;
                 outline: none;
 
                 &:focus {
                     border-bottom: 1px solid $color_1;
                 }
+            }
+
+            select {
+                background-color: $color_2;
             }
 
             textarea {
